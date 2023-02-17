@@ -1,0 +1,15 @@
+﻿@model List<Comic>
+
+<div style="text-align: center">
+    <h1>Tabla Comics</h1>
+    @foreach(Comic com in Model)
+    {
+        <div class="card" style="width: 18rem; float: left">
+            <img src="@com.Imagen" class="card-img-top" />
+            <div class="card-body">
+            <h5 class="card-title">@com.Nombre</h5>
+            <p class="card-text">@com.Descripcion</p>
+            </div>
+        </div>
+    }
+</div>
